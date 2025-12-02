@@ -1,0 +1,151 @@
+/* Reset Page */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #0d1117; /* GitHub dark theme */
+  color: #e6edf3;
+  font-family: 'Inter', sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Center everything */
+.home-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card styling */
+.card {
+  background: #161b22;  /* darker card */
+  border-radius: 16px;
+  border: 1px solid #30363d;
+  color: #fff;
+}
+
+/* Inputs */
+input.form-control {
+  background: #0d1117;
+  color: #e6edf3;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+input.form-control::placeholder {
+  color: #7d8590;
+}
+
+input.form-control:focus {
+  background: #0d1117;
+  border-color: #58a6ff;
+  color: white;
+  box-shadow: 0 0 0 2px rgba(88,166,255,0.2);
+}
+
+/* Buttons */
+.btn-primary {
+  background: #238636;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn-primary:hover {
+  background: #2ea043;
+}
+
+.btn-secondary {
+  background: #30363d;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #484f58;
+}
+
+
+
+
+
+/* === Room layout: Full Screen Grid === */
+.room-wrapper {
+  display: grid;
+  grid-template-columns: 260px 1fr 300px; 
+  gap: 15px;
+  height: 100vh; 
+  width: 100vw;  
+  padding: 15px;
+  background: linear-gradient(180deg, #0b0f14 0%, #0d1117 100%);
+  box-sizing: border-box; /* Ensures padding doesn't cause scrollbars */
+  overflow: hidden; /* Prevents scrolling on the main page */
+}
+
+/* === Shared Panel Styles === */
+.left-sidebar,
+.right-sidebar,
+.center-board {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  height: 100%; 
+  color: #e6edf3;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+/* === Center Board Specifics === */
+.center-board {
+  position: relative;
+}
+
+.board-frame {
+  width: 100%;
+  flex: 1; 
+  background: #ffffff; 
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: crosshair;
+}
+
+.placeholder-text {
+  color: #333;
+  font-weight: 600;
+}
+
+/* === Left Sidebar Components === */
+.sidebar-header { margin-bottom: 20px; text-align: center; }
+.app-title { font-weight: 800; color: #58a6ff; margin: 0; }
+.code-pill { background: #1f6feb; color: white; padding: 2px 8px; border-radius: 4px; font-family: monospace; }
+
+.player-list { list-style: none; padding: 0; margin: 0; overflow-y: auto; flex: 1; min-height: 0 }
+.player-item { padding: 8px 10px; margin-bottom: 5px; border-radius: 6px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: space-between; }
+.player-item.me { border: 1px solid #58a6ff; background: rgba(88,166,255,0.1); }
+.you-badge { font-size: 0.8em; color: #8b949e; }
+
+/* === Right Sidebar Components === */
+.chat-messages {
+  flex: 1; 
+  background: #0d1117;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow-y: auto;
+  border: 1px solid #30363d;
+}
+
+.chat-input { display: flex; gap: 8px; }
+.chat-input input { flex: 1; background: #0d1117; border: 1px solid #30363d; color: white; padding: 8px; border-radius: 6px; }
+.send-btn { background: #238636; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: bold; }
+
