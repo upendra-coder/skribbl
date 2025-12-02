@@ -1,7 +1,7 @@
 import { io } from "socket.io-client";
 
 // This ensures we only create ONE connection for the whole app
-const serverURL = "http://192.168.29.187:5000";
+const serverURL = "https://skribbl-backend-flx5.onrender.com";
 const socket = io(serverURL, { transports: ["websocket"] });
 
 export default socket;
