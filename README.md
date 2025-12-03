@@ -8,7 +8,7 @@ A full-stack, real-time multiplayer drawing and guessing game inspired by Pictio
 
 
 ## 🚀 Live Demo
-**Play here:** https://skribblfrontend-hnjltejon-upendras-projects-8abc1de8.vercel.app
+**Play here:** https://skribblfrontend.vercel.app/
 
 ## ✨ Features
 
