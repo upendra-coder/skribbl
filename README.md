@@ -22,7 +22,6 @@ A full-stack, real-time multiplayer drawing and guessing game inspired by Pictio
 * **Room Architecture:** Isolated game rooms allowing multiple simultaneous matches.
 * **State Recovery:** Handles browser refreshes and disconnects without losing user state or score.
 * **Ghost Cleanup:** Server automatically detects and removes inactive users to prevent memory leaks.
-* **Responsive Design:** Fully playable on Desktop and Mobile (Touch support included).
 
 ---
 
